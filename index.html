@@ -1,146 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Griffin Engel</title>
-    <link href="src/assets/css/index.css" rel="stylesheet">
-    <!-- <link href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet"> -->
-    <script src="https://kit.fontawesome.com/3f26cddddc.js" crossorigin="anonymous"></script>
-</head>
-<body class="text-gray-900">
-
-    <!-- Navigation -->
-    <nav class="bg-blue-100 sticky top-0 shadow-lg">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="flex justify-around">
-                <div class="hidden md:flex items-center space-x-3 font-bold ">
-                    <a href="#projects" class="py-4 px-2 text-blue-900 border-b-4 border-transparent hover:border-blue-900">Projects</a>
-                    <a href="#about" class="py-4 px-2 text-blue-900 border-b-4 border-transparent hover:border-blue-900">About</a>
-                    <a href="#contact" class="py-4 px-2 text-blue-900 border-b-4 border-transparent hover:border-blue-900">Contact</a>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <header class="bg-gray-100 py-12">
-        <div class="container mx-auto text-center">
-            <h1 class="text-5xl font-bold text-gray-900">Griffin Engel</h1>
-            <p class="text-xl text-gray-600 mt-4">Master's Student at the University of Iowa, aspiring to combine data analysis and librarianship.</p>
-        </div>
-    </header>
-
-    <!-- Portfolio Section -->
-    <section id="projects" class="bg-blue-900 w-full mx-auto py-20">
-        <h2 class="text-4xl text-center text-blue-100 font-bold">Projects</h2>
-        <div class="flex flex-wrap justify-around mt-8 overflow-auto">
-            <!-- Iowa OER Dashboard -->
-            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
-                <div class="bg-gray-100 shadow-lg rounded-lg overflow-hidden">
-                    <a href="https://github.com/GriffEngel/practicum-dash-app">
-                        <img src="images/oer-image.png" alt="Project Image" class="w-full h-48 object-cover object-center">
-                    </a>
-                    <div class="p-4 gap-3">
-                        <h3 class="text-xl text-gray-900 font-medium">University of Iowa OER Cost Savings Dashboard</h3>
-                        <p class="text-sm text-gray-900 mt-2">This is a product of my current practicum with the Scholarly Communications Librarian at the University of Iowa. I used Python, a framework called Dash, and Tableau to build this multi-page interactive dashboard. It currently is not hosted anywhere but I linked to the Github repository.</p>
-                    </div>
-                    <div class="ml-5 mr-5 mb-1">
-                        <h4 class="text-xl text-gray-900">Tools Used</h4>
-                        <ul class="ml-4 list-disc">
-                            <li>Python</li>
-                            <li>Microsoft Excel</li>
-                            <li>Dash micro-framework</li>
-                            <li>Bootstrap CSS library</li>
-                        </ul>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Griffin Engel</title>
+        <link href="src/assets/css/index.css" rel="stylesheet" />
+        <!-- <link href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet"> -->
+        <script
+            src="https://kit.fontawesome.com/3f26cddddc.js"
+            crossorigin="anonymous"
+            defer></script>
+    </head>
+    <body class="text-gray-900">
+        <!-- Navigation -->
+        <nav class="bg-blue-100 sticky top-0 shadow-lg">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="flex justify-around">
+                    <div class="hidden md:flex items-center space-x-3 font-bold">
+                        <a
+                            href="#projects"
+                            class="py-4 px-2 text-blue-900 border-b-4 border-transparent hover:border-blue-900"
+                            >Projects</a
+                        >
+                        <a
+                            href="#about"
+                            class="py-4 px-2 text-blue-900 border-b-4 border-transparent hover:border-blue-900"
+                            >About</a
+                        >
+                        <a
+                            href="#contact"
+                            class="py-4 px-2 text-blue-900 border-b-4 border-transparent hover:border-blue-900"
+                            >Contact</a
+                        >
                     </div>
                 </div>
             </div>
-            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
-                <div class="bg-gray-100 shadow-lg rounded-lg overflow-hidden">
-                    <a href="https://iowaoer.com/annual-oer-survey-dashboard/">
-                        <img src="images/powerbi-dash.png" alt="Project Image" class="w-full h-48 object-cover object-center">
-                    </a>
-                    <div class="p-4 gap-3">
-                        <h3 class="text-xl text-gray-900 font-medium">Iowa OER Action Team survey results</h3>
-                        <p class="text-sm text-gray-900 mt-2">This PowerBI dashboard summarizes Iowa OER Action Team's 2023 survey results.</p>
+        </nav>
+
+        <!-- Hero Section -->
+        <header class="bg-gray-100 py-12">
+            <div class="container mx-auto text-center">
+                <h1 class="text-5xl font-bold text-gray-900">Griffin Engel</h1>
+                <p class="text-xl text-gray-600 mt-4">
+                    Master's Student at the University of Iowa, aspiring to combine data analysis
+                    and librarianship.
+                </p>
+            </div>
+        </header>
+
+        <!-- Portfolio Section -->
+        <section id="projects" class="bg-blue-900 w-full mx-auto py-20">
+            <h2 class="text-4xl text-center text-blue-100 font-bold">Projects</h2>
+            <div class="flex flex-wrap justify-around mt-8 overflow-auto">
+                <!-- Iowa OER Dashboard -->
+                <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
+                    <div class="bg-gray-100 shadow-lg rounded-lg overflow-hidden">
+                        <a href="https://github.com/GriffEngel/practicum-dash-app">
+                            <img
+                                src="images/oer-image.png"
+                                alt="Project Image"
+                                class="w-full h-48 object-cover object-center" />
+                        </a>
+                        <div class="p-4 gap-3">
+                            <h3 class="text-xl text-gray-900 font-medium">
+                                University of Iowa OER Cost Savings Dashboard
+                            </h3>
+                            <p class="text-sm text-gray-900 mt-2">
+                                This is a product of my current practicum with the Scholarly
+                                Communications Librarian at the University of Iowa. I used Python, a
+                                framework called Dash, and Tableau to build this multi-page
+                                interactive dashboard. It currently is not hosted anywhere but I
+                                linked to the Github repository.
+                            </p>
+                        </div>
+                        <div class="ml-5 mr-5 mb-1">
+                            <h4 class="text-xl text-gray-900">Tools Used</h4>
+                            <ul class="ml-4 list-disc">
+                                <li>Python</li>
+                                <li>Microsoft Excel</li>
+                                <li>Dash micro-framework</li>
+                                <li>Bootstrap CSS library</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="ml-5 mr-5 mb-1">
-                        <h4 class="text-xl text-gray-900">Tools Used</h4>
-                        <ul class="ml-4 list-disc">
-                            <li>Power BI</li>
-                            <li>Microsoft Excel</li>
-                        </ul>
+                </div>
+                <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
+                    <div class="bg-gray-100 shadow-lg rounded-lg overflow-hidden">
+                        <a href="https://iowaoer.com/annual-oer-survey-dashboard/">
+                            <img
+                                src="images/powerbi-dash.png"
+                                alt="Project Image"
+                                class="w-full h-48 object-cover object-center" />
+                        </a>
+                        <div class="p-4 gap-3">
+                            <h3 class="text-xl text-gray-900 font-medium">
+                                Iowa OER Action Team survey results
+                            </h3>
+                            <p class="text-sm text-gray-900 mt-2">
+                                This PowerBI dashboard summarizes Iowa OER Action Team's 2023 survey
+                                results.
+                            </p>
+                        </div>
+                        <div class="ml-5 mr-5 mb-1">
+                            <h4 class="text-xl text-gray-900">Tools Used</h4>
+                            <ul class="ml-4 list-disc">
+                                <li>Power BI</li>
+                                <li>Microsoft Excel</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Additional project cards -->
+                <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
+                    <div class="bg-gray-100 shadow-lg rounded-lg overflow-hidden">
+                        <a
+                            href="https://public.tableau.com/app/profile/griffin.engel/viz/NBAAverageDefensiveStatistics1996-2023/Dashboard">
+                            <img
+                                src="images/tableau-dashboard.png"
+                                alt="Project Image"
+                                class="w-full h-48 object-cover object-center" />
+                        </a>
+                        <div class="p-4 gap-3">
+                            <h3 class="text-xl text-gray-900 font-medium">
+                                NBA Key Defensive Stats from 1997-2023
+                            </h3>
+                            <p class="text-sm text-gray-900 mt-2">
+                                Does today's NBA really play less defense than in the past? This
+                                dashboard looks at both average field goal percentage and defensive
+                                stats for every NBA team that has existed at any time from
+                                1997-2023.
+                            </p>
+                        </div>
+                        <div class="ml-5 mr-5 mb-1">
+                            <h4 class="text-xl text-gray-900">Tools Used</h4>
+                            <ul class="ml-4 list-disc">
+                                <li>Tableau</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
+                    <div class="bg-gray-100 shadow-lg rounded-lg overflow-hidden">
+                        <a
+                            href="https://github.com/GriffEngel/SQL-Data-Exploration/blob/main/regional_sales_exploration_sql.sql">
+                            <img
+                                src="images/sql-exploration.png"
+                                alt="Project Image"
+                                class="w-full h-48 object-cover object-center" />
+                        </a>
+                        <div class="p-4 gap-3">
+                            <h3 class="text-xl text-gray-900 font-medium">SQL Data Exploration</h3>
+                            <p class="text-sm text-gray-900 mt-2">
+                                I found this dataset on Kaggle and thought it would be a good way to
+                                show an example of exploring a dataset with SQL Server.
+                            </p>
+                        </div>
+                        <div class="ml-5 mr-5 mb-1">
+                            <h4 class="text-xl text-gray-900">Tools Used</h4>
+                            <ul class="ml-5 list-disc">
+                                <li>SQL</li>
+                                <li>SQL Server</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- Additional project cards -->
-            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
-                <div class="bg-gray-100 shadow-lg rounded-lg overflow-hidden">
-                    <a href="https://public.tableau.com/app/profile/griffin.engel/viz/NBAAverageDefensiveStatistics1996-2023/Dashboard">
-                        <img src="images/tableau-dashboard.png" alt="Project Image" class="w-full h-48 object-cover object-center">
-                    </a>
-                    <div class="p-4 gap-3">
-                        <h3 class="text-xl text-gray-900 font-medium">NBA Key Defensive Stats from 1997-2023</h3>
-                        <p class="text-sm text-gray-900 mt-2">Does today's NBA really play less defense than in the past? This dashboard looks at both average field goal percentage and defensive stats for every NBA team that has existed at any time from 1997-2023.</p>
-                    </div>
-                    <div class="ml-5 mr-5 mb-1">
-                        <h4 class="text-xl text-gray-900">Tools Used</h4>
-                        <ul class="ml-4 list-disc">
-                            <li>Tableau</li>
-                        </ul>
-                    </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="bg-gray-100 py-20">
+            <div class="container mx-auto text-center">
+                <h2 class="text-4xl text-gray-900 font-bold">About Me</h2>
+                <p class="text-gray-900 mt-4 max-w-2xl mx-auto mb-2">
+                    I am currently a Master's Student in the School of Library and Information
+                    Science at the University of Iowa. Along with that, I am familiar with working
+                    with datasets to clean, transform, and visualize the data within to provide
+                    insights. Some tools I have used before include Python and associated libraries,
+                    Power BI, Tableau, Excel, and Dash, a Python framework used to create data
+                    visualization dashboards from scratch using the Plotly visualization library.
+                </p>
+                <p class="text-gray-900">
+                    Some of my other skills include HTML, CSS, and the Tailwind CSS framework, which
+                    I used to make this site.
+                </p>
+            </div>
+        </section>
+        <!-- Get in Touch Section -->
+        <section id="contact" class="bg-blue-900 py-20">
+            <div class="container grid mx-auto text-center">
+                <h2 class="text-4xl text-blue-100 font-bold">Get in Touch</h2>
+                <a href="mailto:gnengel07@gmail.com" class="text-blue-100 mt-4 max-w-2xl mx-auto"
+                    >gnengel07@gmail.com</a
+                >
+                <div class="flex mx-auto mt-4 text-xl gap-4">
+                    <a href="https://github.com/GriffEngel" class="text-blue-100"
+                        ><i class="fa-brands fa-github" title="Github"></i
+                    ></a>
+                    <a href="https://www.kaggle.com/griffinengel" class="text-blue-100"
+                        ><i class="fa-brands fa-kaggle" title="Kaggle"></i
+                    ></a>
+                    <a
+                        href="https://www.linkedin.com/in/griffin-engel-066b12224/"
+                        class="text-blue-100"
+                        ><i class="fa-brands fa-linkedin-in" title="LinkedIn"></i
+                    ></a>
+                    <a
+                        href="https://public.tableau.com/app/profile/griffin.engel/vizzes"
+                        class="text-blue-100"
+                        >Tableau</a
+                    >
+                    <a href="https://twitter.com/DataVizGriff" class="text-blue-100"
+                        ><i class="fa-brands fa-x-twitter" title="X/Twitter"></i
+                    ></a>
                 </div>
             </div>
-            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
-                <div class="bg-gray-100 shadow-lg rounded-lg overflow-hidden">
-                    <a href="https://github.com/GriffEngel/SQL-Data-Exploration/blob/main/regional_sales_exploration_sql.sql">
-                        <img src="images/sql-exploration.png" alt="Project Image" class="w-full h-48 object-cover object-center">
-                    </a>
-                    <div class="p-4 gap-3">
-                        <h3 class="text-xl text-gray-900 font-medium">SQL Data Exploration</h3>
-                        <p class="text-sm text-gray-900 mt-2">I found this dataset on Kaggle and thought it would be a good way to show an example of exploring a dataset with SQL Server.</p>
-                    </div>
-                    <div class="ml-5 mr-5 mb-1">
-                        <h4 class="text-xl text-gray-900">Tools Used</h4>
-                        <ul class="ml-5 list-disc">
-                            <li>SQL</li>
-                            <li>SQL Server</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-    </section>
+        </section>
 
-    <!-- About Section -->
-    <section id="about" class="bg-gray-100 py-20">
-        <div class="container mx-auto text-center">
-            <h2 class="text-4xl text-gray-900 font-bold">About Me</h2>
-            <p class="text-gray-900 mt-4 max-w-2xl mx-auto mb-2">I am currently a Master's Student in the School of Library and Information Science at the University of Iowa. Along with that, I am familiar with working with datasets to clean, transform, and visualize the data within to provide insights. Some tools I have used before include Python and associated libraries, Power BI, Tableau, Excel, and Dash, a Python framework used to create data visualization dashboards from scratch using the Plotly visualization library.</p>
-            <p class="text-gray-900">Some of my other skills include HTML, CSS, and the Tailwind CSS framework, which I used to make this site.</p>
-        </div>
-    </section>
-    <!-- Get in Touch Section -->
-    <section id="contact" class="bg-blue-900 py-20">
-        <div class="container grid mx-auto text-center">
-            <h2 class="text-4xl text-blue-100 font-bold">Get in Touch</h2>
-            <a href="mailto:gnengel07@gmail.com" class="text-blue-100 mt-4 max-w-2xl mx-auto">gnengel07@gmail.com</a>
-            <div class="flex mx-auto mt-4 text-xl gap-4">
-                <a href="https://github.com/GriffEngel" class="text-blue-100"><i class="fa-brands fa-github" title="Github"></i></a>
-                <a href="https://www.kaggle.com/griffinengel" class="text-blue-100"><i class="fa-brands fa-kaggle" title="Kaggle"></i></a>
-                <a href="https://www.linkedin.com/in/griffin-engel-066b12224/" class="text-blue-100"><i class="fa-brands fa-linkedin-in" title="LinkedIn"></i></a>
-                <a href="https://public.tableau.com/app/profile/griffin.engel/vizzes" class="text-blue-100">Tableau</a>
-                <a href="https://twitter.com/DataVizGriff" class="text-blue-100"><i class="fa-brands fa-x-twitter" title="X/Twitter"></i></a>
-            </div>
-            
-        </div>
-    </section>
-
-    <footer class="bg-blue-900 text-center py-8 text-gray-100">
-        © 2024 Griffin Engel. All rights reserved.
-    </footer>
-
-</body>
+        <footer class="bg-blue-900 text-center py-8 text-gray-100">
+            © 2024 Griffin Engel. All rights reserved.
+        </footer>
+    </body>
 </html>
